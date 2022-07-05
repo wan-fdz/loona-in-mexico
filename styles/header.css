@@ -1,0 +1,72 @@
+.site-navbar {
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-navbar .container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.site-navbar .container .row{
+    width: 100%;
+}
+
+.site-navbar .site-logo {
+    margin-left: 2rem;
+}
+
+.site-navbar .site-logo .logo {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--dark-purple);
+    text-decoration: none !important;
+}
+
+.site-navbar .site-navigation .site-menu {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 0; 
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.site-navbar .site-navigation .site-menu a {
+    text-decoration: none !important;
+    display: inline-block; 
+    color: var(--dark-gray);
+}
+.site-navbar .site-navigation .site-menu > li {
+    display: inline-block; 
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0px;
+    display: inline-block;
+}
+
+.site-navbar .site-navigation .site-menu > li > a:hover {
+    text-decoration: overline !important;
+    color: var(--very-dark-purple); 
+}
+
+.btn {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    background: var(--dark-purple);
+}
+
+.btn:hover {
+    background: var(--very-dark-purple);
+}
+
+
+
+
