@@ -1,0 +1,26 @@
+.evento-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.evento-banner .container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.evento-banner .container .main-info h1 {
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--very-dark-blue);
+    margin: 48px 0;
+}
+
+
+.evento-banner .container .main-info p {
+    line-height: 35px;
+    max-width: 600px;
+    color: var(--dark-gray);
+    font-size: 20px;
+}

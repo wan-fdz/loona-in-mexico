@@ -68,9 +68,10 @@
     padding: 10px;
 }
 
-.hero .container .hero-content .hero-card .hero-card .btn {
-    color: var(--dark-purple);
+.progress-bar {
+    background-color: var(--dark-purple);
 }
+
 
 .hero .container .hero-img {
     width: 40%;
