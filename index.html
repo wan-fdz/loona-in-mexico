@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/inicio.css">
     <link rel="stylesheet" href="styles/rifa.css">
     <link rel="stylesheet" href="styles/eventos.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <!-- jQuery and JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -29,17 +30,17 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <header class="site-navbar bg-white position-fixed" role="banner">
+    <header class="site-navbar bg-white position-fixed" role="banner" id="navbar">
         <div class="container d-flex">
             <div class="row align-items-center position-relative">
-                <div class="col-lg-4">
+                <div class="col-lg-4 main-logo">
                     <div class="site-logo text-left">
                         <a href="./" class="logo">
                             LOONA THE WORLD TOUR
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center links">
                     <nav class="site-navigation text-right ml-auto" role="navigation">
                         <ul class="site-menu ml-auto">
                             <li class="active"><a href="#inicio" class="nav-link">Donación</a></li>
@@ -48,7 +49,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-2 text-center">
+                <div class="col-lg-2 text-center btn-pp">
                     <a href="#hoaxbuster" class="btn btn-primary btn-lg" role="button">PAYPAL</a>
                 </div>
             </div>
@@ -84,7 +85,7 @@
             <div class="container logos">
                 <img src="images/yanglogo.png">
                 <img src="images/loonaorbitmex.jpg">
-                <img src="images/pfizer.png">
+                <h3>CHERRY MOTION <br> MÉXICO</h3>
             </div>
         </section>
 
@@ -102,13 +103,8 @@
                 <div class="container">
                     <div class="cards-info">
                         <div class="card">
-                            <h2 class="card-title">Vanipoly</h2>
-                            <img src="images/vanipoly.jpg" alt="vanipoly">
-                            <p class="card-text"> 1 ganador <br> Juego de mesa fanmade</p>
-                        </div>
-                        <div class="card">
                             <h2 class="card-title">Pósteres</h2>
-                            <img src="images/loonaot12poster.jpg" alt="poster" style="filter: grayscale(100%);">
+                            <img src="images/loonaot12poster.jpg" alt="poster">
                             <p class="card-text"> 7 ganadores</p>
                         </div>
                         <div class="card">
@@ -120,6 +116,11 @@
                             <h2 class="card-title">& Álbum Set</h2>
                             <img src="images/loona&set.jpg" alt="andset" style="filter: grayscale(100%);">
                             <p class="card-text"> 1 ganador <br> Solo photobook y CD</p>
+                        </div>
+                        <div class="card">
+                            <h2 class="card-title">Vanipoly</h2>
+                            <img src="images/vanipoly.jpg" alt="vanipoly" style="filter: grayscale(100%);">
+                            <p class="card-text"> 1 ganador <br> Juego de mesa fanmade</p>
                         </div>
                     </div>
                 </div>
@@ -143,21 +144,26 @@
                         <div class="card">
                             <h2 class="card-title">Brazalete + 4-CUT</h2>
                             <img src="images/loona4cut.jpg" alt="loona4cut" style="filter: grayscale(100%);">
-                            <p class="card-text"> 1 ganador <br> Set completo de 4-CUT</p>
+                            <p class="card-text"> 1 ganador <br> Set completo de LOONAVERSE:FROM 4-CUT + brazalete</p>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="cards-info">
                         <div class="card">
-                            <h2 class="card-title">Lightstick</h2>
-                            <img src="images/loonalightstick.png" alt="lightstick" style="filter: grayscale(100%);">
-                            <p class="card-text"> 1 ganador</p>
+                            <h2 class="card-title">Orbit 3.0 Set</h2>
+                            <img src="images/loonaorbit3.jpeg" alt="loonaorbit3" style="filter: grayscale(100%);">
+                            <p class="card-text"> 1 ganador <br>Set de postcards + Set de photocards del Orbit 3.0</p>
                         </div>
                         <div class="card">
                             <h2 class="card-title">++ Álbum</h2>
                             <img src="images/loonaplusplus.jpg" alt="loonaplusplus" style="filter: grayscale(100%);">
                             <p class="card-text"> 1 ganador <br> Versión A con PC</p>
+                        </div>
+                        <div class="card">
+                            <h2 class="card-title">Lightstick</h2>
+                            <img src="images/loonalightstick.png" alt="lightstick" style="filter: grayscale(100%);">
+                            <p class="card-text"> 1 ganador</p>
                         </div>
                         <div class="card">
                             <h2 class="card-title">XX Álbum</h2>
@@ -171,16 +177,50 @@
 
         <section id="eventos">
             <div class="evento-banner">
-                <div class="container">
-                    <div class="main-info">
+                <div class="container text-right">
+                    <div class="faq-text">
                         <h1>Diseño de Banner</h1>
                         <p>
-                            ¡Participa en la creación del banner! Este banner se entregará el día del concierto a una cantidad limitada de asistentes y se levantará durante una canción para mostrar nuesto apoyo a las chicas.
+                            ¡Participa en la creación del banner! 
+                            Este banner se entregará el día del concierto a una cantidad limitada de asistentes y se levantará durante una canción para mostrar nuesto apoyo a las chicas.
                         </p>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="faq-image">
+                        <img src="images/convocatoria-banner.png" alt="convocatoria-banner" class="">
+                    </div>
+                    <div class="faq-main-info align-items-center">
+                        <a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/so_Wane/timelines/1545538213464326145?ref_src=twsrc%5Etfw">LOONA IN MEXICO - Curated tweets by so_Wane</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+                    </div>
+
+                </div>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-info">
+                <div class="justify-content-center" style="display: flex;">
+                    <img class="icon" src="images/twitter_round_gray.png" alt="Open Twitter">&nbsp;
+                </div>
+                <div class="justify-content-center" style="display: flex;">
+                    <p> Developed by wan-fdz</p>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-150px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 </html>

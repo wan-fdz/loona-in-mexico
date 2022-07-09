@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     z-index: 1 !important;
+    transition: top 0.3s;
 }
 
 .site-navbar .container{
@@ -66,6 +67,42 @@
 
 .btn:hover {
     background: var(--very-dark-purple);
+}
+
+
+@media (max-width: 1000px) {
+
+    .site-navbar .site-navigation .site-menu {
+        display: none;
+    }
+
+    .main-logo {
+        width: auto;
+    }
+
+    .links {
+        width: 0%;
+    }
+
+    .btn-pp {
+        width: auto;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .site-navbar .site-logo .logo {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
 }
 
 

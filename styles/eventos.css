@@ -1,4 +1,4 @@
-.evento-banner {
+/* .evento-banner {
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -23,4 +23,71 @@
     max-width: 600px;
     color: var(--dark-gray);
     font-size: 20px;
+} */
+
+.evento-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.evento-banner .container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.evento-banner .container .faq-text {
+    width: 50%;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.evento-banner .container .faq-text h1 {
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--very-dark-blue);
+    margin: 48px 0;
+}
+
+
+.evento-banner .container .faq-text p {
+    line-height: 35px;
+    max-width: auto;
+    color: var(--dark-gray);
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.evento-banner .container .faq-image {
+    text-align: center;
+    width: 50%;
+}
+
+.evento-banner .container .faq-image img {
+    margin-bottom: -5px;
+    width: 70%;
+}
+
+.evento-banner .container .faq-main-info {
+    width: 50%;
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+
+    .evento-banner .container .faq-text {
+        width: 100%;
+    }
+
+    .evento-banner .container .faq-image {
+        display: none;
+    }
+
+    .evento-banner .container .faq-main-info {
+        width: 100%;
+    }
+    
 }
