@@ -50,7 +50,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-2 text-center btn-pp">
-                    <a href="https://www.paypal.me/loonaprojectmex" class="btn btn-primary btn-lg" role="button">PAYPAL</a>
+                    <a href="" onclick="clickAlert()" class="btn btn-primary btn-lg" role="button">PAYPAL</a>
                 </div>
             </div>
         </div>
@@ -70,8 +70,8 @@
                                     Total Recaudado
                                 </h2>
                                 <div class="progress" style="height: 30px;">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" style="width:29%">
-                                        29%
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                        30%
                                     </div>
                                 </div>
                             </div> 
@@ -230,6 +230,11 @@
             document.getElementById("navbar").style.top = "-150px";
           }
           prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
+        function clickAlert() {
+          alert("Por el momento PayPal no se encuentra disponible, por favor realiza el depósito por transferencia bancaria.");
         }
     </script>
 </body>
